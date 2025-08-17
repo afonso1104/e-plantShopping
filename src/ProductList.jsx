@@ -304,8 +304,8 @@ function ProductList({ onHomeClick }) {
                 <div className="product-list">
                 {group.plants.map((item) => (
                     <div className="product-card" key={item.name}>
-                    <div className="product-image">
-                        <img src={item.image} alt={item.name}/>
+                    <div>
+                        <img className="product-image" src={item.image} alt={item.name}/>
                     </div>
                     <div className="text">{item.name}</div>
                     <div className="description">{item.description}</div>
